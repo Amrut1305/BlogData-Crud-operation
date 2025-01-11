@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: var(--color-priColor); */
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root{
+    --color-secColor : #f89142;
+    --color-terColor : #5e5e5e;
+    --color-dark : #000000;
+    --color-light : #fff;
+    --color-priColor : #4583aa;
+    --color-back2 : #bc382e;
+    --color-back3 : #388d80;
+    --color-navBack4 : #d0dedc;
+}
+
+a{
+    display: inline-block;
+    color: aliceblue;
+}
+.cardBg{
+    background-color: rgb(73, 71, 71);
+    color: aliceblue;
+}
+.header .container-fluid, .header .navbar-brand,body{
+    animation: colorChange 9s infinite; 
+  }
+  
+  @keyframes colorChange {
+    0% { background-color: var(--color-priColor); }
+    50% { background-color: var(--color-back2); }
+    100% { background-color: var(--color-back3); }
+  }

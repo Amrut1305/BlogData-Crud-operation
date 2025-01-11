@@ -1,0 +1,126 @@
+
+.header a.navbar-brand  img.logo{
+    height: 4rem;
+    /* background-color: var(--color-navBack4); */
+}
+
+.navUl li a{
+    color: var(--color-light);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.4s linear;
+}
+.navUl li:is(:active,:hover,:focus) a{
+    color: var(--color-navBack4);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+#searchButton, #signInButton, #createBlogBtn,#searchInput{
+    border : 1px solid var(--color-secColor);
+    background-color: var(--color-navBack4);
+    color: var(--color-secColor);
+    width: 17%;
+    font-weight: 500;
+    transition: all 0.4s linear;
+}
+#searchButton:hover, #signInButton:hover, #createBlogBtn:hover,#searchInput:hover{
+    border : 1px solid var(--color-secColor);
+    color: var(--color-darColor);
+    background-color: var(--color-secColor);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+#searchInput::placeholder{
+    color: var(--color-secColor);
+}
+#searchInput:hover::placeholder{
+    color: var(--color-dark);
+}
+#searchInput{
+    width: 30%;
+}
+
+.cardImage{
+    height: 14rem;
+}
+#createBlogForm{
+    width: 50rem;
+    /* height: 50rem; */
+    border: 1px solid rgb(73, 71, 71);
+    border-radius: 0.7rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0.2rem 0.2rem 1rem 0.2rem var(--color-dark);
+}
+.formTitle h3{
+    display: inline-block;
+}
+.formTitle i{
+    color: red;
+    font-size: 45px;
+    background: transparent;
+}
+#createBlogForm .formIcon .fa-solid{
+    background-color: var(--color-terColor);
+} 
+.card i{
+    font-size: 1.5rem;
+}
+.card{
+    position: relative;
+    height: 92%;
+    transition: all 0.6s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+}
+.card .card-footer{
+    height: 47%;
+}
+.card .card-footer span{
+    font-size: 1rem;
+}
+.card .card-footer p{
+    height: 65%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    text-align: justify;
+}
+.favouriteIcon{
+    position: absolute;
+    right: 3%;
+    top: 0.5rem;
+}
+/* .favouriteIconColor a i{
+    color: gold;
+} */
+.createformPosition{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    background: transparent;
+}
+.createFormBackground{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.3);
+    /* backdrop-filter: blur; */
+    /* filter: blur(8px); */
+}
+.cardFooterIcons, .cardFooterIcons a, .cardFooterIcons a i{
+    background: transparent;
+}
+footer{
+    background-color: var(--color-terColor);
+    color: var(--color-navBack4);
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    height: 1.5rem;
+}
